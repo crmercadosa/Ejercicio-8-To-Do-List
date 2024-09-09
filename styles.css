@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand',sans-serif;
+}
+
+.contenedor{
+    width: 500px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0.5px 15px 0.5px black;
+    background: white;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #c17779;
+}
+
+.tarea{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto auto auto;
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid #fdb7b9;
+}
+
+.tarea:hover{
+    background: #f7e3db;
+    transition: 0.5s;
+}
+
+.tarea:hover input {
+    background: #f7e3db;
+    transition: 0.5s;
+}
+
+.tarea input:focus {
+    background: white;
+}
+
+.cbe{
+    color: #60bfc1;
+    background: white;
+    width: 35px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border: 0.2px solid #badfd7;
+    margin-left: 5px;
+    cursor: pointer; 
+}
+
+.cbe:hover{
+    color: white;
+    background: #60bfc1;
+    border-radius: 10px;
+    border: 0.2px solid #badfd7;
+}
+
+#agregar{
+    color: #c17779;
+    background: white;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 0.2px solid #fdb7b9;
+    margin-left: 5px;
+    cursor: pointer; 
+}
+
+#agregar:hover{
+    color: white;
+    background: #c17779;
+    border: 0.2px solid #fdb7b9;
+}
+
+input{
+    font-size: 1.5rem;
+    height: auto;
+    width: auto;
+    border: none;
+}
+
+input.cumplida {
+    text-decoration: line-through;
+    color: gray;
+}
